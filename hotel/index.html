@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <title>Hotel Booking Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
+</head>
+
+<body>
+  <section class="head">
+    <div class="container flex1">
+      <div class="scoial">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-youtube"></i>
+      </div>
+      <div class="logo">
+        <img src="image/logo1.png" alt="">
+      </div>
+      <div class="address">
+        <i class="fas fa-map-marker-alt"></i>
+        <span>Uma Char Rasta , Vadodara Gujarat</span>
+      </div>
+    </div>
+  </section>
+
+
+  <header class="header">
+    <div class="container">
+      <nav class="navbar flex1">
+        <div class="sticky_logo logo">
+          <img src="image/logo.png" alt="">
+        </div>
+
+        <ul class="nav-menu">
+          <li> <a href="#home">Home</a> </li>
+          <li> <a href="#about">about</a> </li>
+          <li> <a href="#facilities">Facilities</a> </li>
+          <li> <a href="#services">services</a> </li>
+          <li> <a href="#rooms">room</a> </li>
+          <li> <a href="#testimonials">testimonials</a> </li>
+          <li> <a href="#gallary">gallary</a> </li>
+          <li> <a href="#blog">blog</a> </li>
+          <li> <a href="#contact">contact</a> </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+
+        <div class="head_contact">
+          <i class="fas fa-phone-volume"></i>
+          <span>+91 6264547523</span>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <script>
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-menu");
+
+    hamburger.addEventListener("click", mobliemmenu);
+
+    function mobliemmenu() {
+      hamburger.classList.toggle("active");
+      navMenu.classList.toggle("active");
+    }
+
+    window.addEventListener("scroll", function() {
+      var header = document.querySelector("header");
+      header.classList.toggle("sticky", window.scrollY > 0)
+    })
+  </script>
+
+
+  <section class="home" id="home">
+    <div class="container">
+      <h1>Make Memories</h1>
+      <p>Discover the place where you can have fun , enjoy a lot and create lots of beautiful memories</p>
+
+      <div class="content grid">
+        <div class="box">
+          <span>ARRIVAL DATE </span> <br>
+          <input type="date" placeholder="29/20/2021">
+        </div>
+        <div class="box">
+          <span>DEPARTURE DATE </span> <br>
+          <input type="date" placeholder="29/20/2021">
+        </div>
+        <div class="box">
+          <span>GUESTS</span> <br>
+          <input type="number" placeholder="01">
+        </div>
+        <div class="box">
+          <span>WHERE </span> <br>
+          <input type="text" placeholder="Area or Landmark">
+        </div>
+        <div class="box">
+          <button class="flex1">
+            <span>SEARCH</span>
+            <i class="fas fa-arrow-circle-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="container">
+      <div class="heading">
+        <h5>ABOUT US</h5>
+        <h2>We are cool to give you the best stays.
+        </h2>
+      </div>
+
+      <div class="content flex  top">
+        <div class="left">
+          <h3>As much as comfort want to get from us everything
+          </h3>
+          <p>
+            Trip Time has a wide range of luxury and budget-friendly hotel chain properties. We have picked the finest hotels in India with world-class amenities. We bring you not only a stay option, but an experience in your budget to enjoy the luxury. We make sure that all the hotels are safe, hygienic, comfortable, and easily approachable when it comes to location. Book your hotel with Trip Travel and don’t forget to grab an amazing hotel deal to save huge on your stay.
+          </p>
+          <p> 
+            Trip Time seamlessly connects millions of travellers with memorable experiences, a range of transport options and incredible places to stay - from homes to hotels and much more.
+            Trip Time enables properties all over the world to reach a global audience and grow their businesses.
+            Whether you're a backpacker or a business person, hunting a bargain or looking to bump up to a suite – Trip Time is for anyone and everyone that wants to make their money go further on the their next stay.
+          </p>
+        </div>
+        <div class="right">
+          <img src="image/a.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="wrapper">
+    <div class="container">
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <div class="heading">
+            <h3>A WARM WELCOME BY THE STAFF</h3>
+            </div>
+          <p>Either it is your first time in a hotel or more than that, staff that welcomes their guests every time with the pretentious smile on their faces. They always greet their guests in a way that it looks they care for them and they are always welcome here, regardless of any class difference.</p>
+        </div>
+        <div class="item">
+          <div class="heading">
+            <h3>PROVIDES HONEST INFORMATION</h3>
+          </div>
+          <p>Nothing is more than honesty.Hotel staff provide honest and correct information regarding the charges of room and the services provided by the hotel. They give true information to the tourist about the sites of the city which they can visit in the minimum budget instead of promoting the sites for which they are getting a commission to promote them.</p>
+        </div>
+        <div class="item">
+          <div class="heading">
+            <h3>KIND TO PROVIDE EXTRA SUPPORT</h3>
+          </div>
+          <p> Hotel is always ready to provide and give extra support to their guests no matter what. They are always be available for their guests in case of any emergency or mishap, and always look after their guests and provide the rooms that are properly ready instead of adjusting them in any unprepared and disorganized room.  </p>
+        </div>
+      
+    <div class="item">
+      <div class="heading">
+        <h3>CHARMING VIEW</h3>
+      </div>
+      <p>The location of your hotels is extremely good and a bit different from other cheap hotels. They are near a natural location like a waterfall, etc. that serve beautiful location to the guests from the balconies of their luxuries suites and amazing services by your well-trained staff. The hotels are located in such places are mostly far away from the city. But they provide extra services to their guests when they are paying a huge amount to achieve all these benefits like transport services to shop and travel easily from hotel to other interesting locations.</p>
+    </div>
+<div class="item">
+  <div class="heading">
+    <h3>CLEANLINESS</h3>
+  </div>
+  <p>The cleanliness and hygiene are very important, not only in your room but in your washroom and the place where you are dining.  Hotels always takes care of such petty things as these are the small, little things. Not only the rooms etc. but the staff responsible for the cleaning and other things are also be neat and clean to exhibit the importance of hygiene and cleanliness in the hotel.</p>
+</div>
+
+<div class="item">
+  <div class="heading">
+    <h3>FEELS LIKE HOME</h3>
+  </div>
+  <p>The staff and the services of the hotel is good enough to provide comfort and care to the guests so they feel like they are at home.Breakfast is ready on time and serve uniquely and differently to make them feel special.</p>
+</div>
+
+<div class="item">
+  <div class="heading">
+    <h3>FAST SERVICE</h3>
+  </div>
+  <p> The service of hotels is extra fast and staff is always be ready to assist the guests even at midnight. The staff of the hotel assures that everything is at their place and the guests are having a pleasant and wonderful time here.</p>
+</div>
+
+<div class="item">
+  <div class="heading">
+    <h3>SPACIOUS ROOMS</h3>
+  </div>
+  <p>The rooms of the hotels is spacious enough to accommodate the guests and their luggage properly, it is comfortable with all the necessities and luxuries like a tiny fridge having chocolates and champagne, etc. A large T.V with a king-size bed for peaceful sleep at night.</p>
+</div>
+<div class="item">
+  <div class="heading">
+    <h3>RECREATION AREAS</h3>
+  </div>
+  <p>Hotels do have some recreation areas for the entertainment of its guests like a big size swimming pool where people can enjoy and have some fun. In the same way, a gym in the hotel is a must, especially for the people who are extremely health-conscious and cannot afford to miss their gym, game zone is also proivded by the hotels.</p>
+</div>
+</div>
+</div>
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: true,
+      dots: false,
+      navText: ["<i class='far fa-long-arrow-alt-left'></i>", "<i class='far fa-long-arrow-alt-right'></i>"],
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 1
+        },
+        1000: {
+          items: 1
+        }
+      }
+    })
+  </script>
+
+
+  <section class="wrapper2" id="facilities">
+    <div class="container">
+      <div class="heading mtop">
+        <h5>FACILITIES</h5>
+        <h2>Giving entirely awesome </h2>
+      </div>
+
+      <div class="content grid mtop">
+        <div class="box">
+          <i class="fas fa-shipping-fast"></i>
+          <h3>Pick Up & Drop</h3>
+          <p>Pickup and Drop service is given to guests.</p>
+          <span class='far fa-long-arrow-alt-right'></span>
+        </div>
+        <div class="box">
+          <i class="fas fa-wifi"></i>
+          <h3>Free wifi</h3>
+          <p>Free wifi facility is available in all rooms.</p>
+          <span class='far fa-long-arrow-alt-right'></span>
+        </div>
+        <div class="box">
+          <i class="fas fa-car"></i>
+          <h3>Free Parking</h3>
+          <p>All the hotels have a proper parking space for vehicles.</p>
+          <span class='far fa-long-arrow-alt-right'></span>
+        </div>
+        <div class="box">
+          <i class="far fa-gamepad"></i>
+          <h3>Special gamezones </h3>
+          <p>gamezones is available for children awa adults for refreshment.</p>
+          <span class='far fa-long-arrow-alt-right'></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="room wrapper2 top" id="services">
+    <div class="container">
+      <div class="heading">
+        <h5>OUR SERIVICES</h5>
+        <h2>Enjoy your vacation with these services </h2>
+      </div>
+      <div class="content flex mtop">
+        <div class="left grid2">
+          <div class="box">
+            <i class="fas fa-desktop"></i>
+            <p>We don’t charge you any booking fees or add any administrative charges. And in many cases, your booking can be cancelled free of charge.</p>
+            <h3>No booking fee</h3>
+          </div>
+          <div class="box">
+            <i class="fas fa-dollar-sign"></i>
+            <p>guarantees to offer you the best available rates and with our promise to price match, you can rest assured that you’re always getting a great deal.</p>
+            <h3>Best rate guarantee</h3>
+          </div>
+          <div class="box">
+            <i class="fab fa-resolving"></i>
+            <p>We don’t charge you any booking fees or add any administrative charges. And in many cases, your booking can be cancelled free of charge.</p>
+            <h3>Reservations 24/7</h3>
+          </div>
+          <div class="box">
+            <i class="fal fa-alarm-clock"></i>
+            <p>Accessing the Internet has become so engrained in our day-to-day lives.Free Of Cost wifi facility is provided to all the guests. No extra charges reuqired.</p>
+            <h3>High-speed Wi-Fi</h3>
+          </div>
+          <div class="box">
+            <i class="fas fa-mug-hot"></i>
+            <p>Free Breakfast is provided to all guests staying in hotel.</p>
+            <h3>Free breakfast</h3>
+          </div>
+          <div class="box">
+            <i class="fas fa-user-tie"></i>
+            <p>No extra charge is taken for one extra person .</p>
+            <h3>One person free</h3>
+          </div>
+        </div>
+        <div class="right">
+          <img src="image/r.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="timer about wrapper">
+    <div class="background"> </div>
+    <div class="container">
+      <div class="heading">
+        <h5>LAST MINUTE!</h5>
+        <h2> <span>Incredible!</span> Are you coming today</h2>
+      </div>
+
+      <div id="time" class="flex1 mtop"> </div>
+    </div>
+  </section>
+  <script src="js/jquery.countdown.js" charset="utf-8"></script>
+  <script src="js/jquery.countdown.min.js" charset="utf-8"></script>
+  <script type="text/javascript">
+    $('#time').countdown('2024/01/01', function(event) {
+      $(this).html(event.strftime(
+        '<div class="clock"><span>%d</span> <p>Days</p></div> ' +
+        '<div class="clock"><span>%H</span> <p>Hours</p></div> ' +
+        '<div class="clock"><span>%M</span> <p>Minutes</p></div> ' +
+        '<div class="clock"><span>%S</span> <p>Seconds</p></div> '
+      ));
+    });
+  </script>
+
+
+  <section class="offer mtop" id="rooms">
+    <div class="container">
+      <div class="heading">
+        <h5> ROOMS OFFERED </h5>
+        <h3>Fascinating rooms & suites </h3>
+      </div>
+
+      <div class="content grid2 mtop">
+        <div class="box flex">
+          <div class="left">
+            <img src="image/o1.jpg" alt="">
+          </div>
+          <div class="right">
+            <h4>Standard Room</h4>
+            <div class="rate flex">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>such as the types you would encounter at motels or many brand hotels, offer a room and separate bathroom area for travelers to book nightly. These rooms are usually marketed by the type of sleeping arrangements available: King room, queen room, or double room. While the layout of the room may vary in terms of additional furniture, whether the bathroom includes a shower/tub combination or a shower only, as well as included amenitie</p>
+            <h5>From $50.6/night</h5>
+            <button class="flex1">
+              <span>Check Availability</span>
+              <i class="fas fa-arrow-circle-right"></i>
+            </button>
+          </div>
+        </div>
+        <div class="box flex">
+          <div class="left">
+            <img src="image/o2.jpg" alt="">
+          </div>
+          <div class="right">
+            <h4>Deluxe Room</h4>
+            <div class="rate flex">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p> Size and price are usually the two main differences between standard and deluxe hotel rooms. Deluxe rooms are usually larger than their standard counterparts, may include a bathtub and a shower in the bathroom, and include more high-end amenities. Many deluxe hotel rooms are also advertised based on the view they offer guests: Bay view, city view, mountain view, or other desirable scenery for travelers to enjoy. Some include patios, balconies, a private terrace, or other additions that set them apart from standard room types.</p>
+            <h5>From $100.6/night</h5>
+            <button class="flex1">
+              <span>Check Availability</span>
+              <i class="fas fa-arrow-circle-right"></i>
+            </button>
+          </div>
+        </div>
+        <div class="box flex">
+          <div class="left">
+            <img src="image/o3.jpg" alt="">
+          </div>
+          <div class="right">
+            <h4>Suite Room</h4>
+            <div class="rate flex">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>hotel suites usually boast more than just a bed and a bathroom. Unlike studios, however, suites are typically defined by their separated spaces. The bedroom is often separated from the living space by a wall, sometimes with a privacy door. The living room may include a pull-out sofa to accommodate additional guests as well. Suites also tend to include a separate kitchen area with appliances, dining space, and the ability to store food. Not all suites include full kitchens, however, many only include kitchenettes — a scaled-down functional kitchen space.</p>
+            <h5>From $150.6/night</h5>
+            <button class="flex1">
+              <span>Check Availability</span>
+              <i class="fas fa-arrow-circle-right"></i>
+            </button>
+          </div>
+        </div>
+        <div class="box flex">
+          <div class="left">
+            <img src="image/o4.jpg" alt="">
+          </div>
+          <div class="right">
+            <h4>Connecting rooms</h4>
+            <div class="rate flex">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p> lie side by side on a hotel floor. While connecting rooms have separate outside entrances, they're also connected inside via a set of two doors. Each room has access to one door and the freedom to unlock it. When both doors are unlocked, the two rooms can be turned into one large space. Connecting rooms are commonly found in large brand hotels and are popular choices for a variety of group blocks, such as large families, youth sports teams, wedding party members, and other travelers looking for access to more space. </p>
+            <h5>From $175.6/night</h5>
+            <button class="flex1">
+              <span>Check Availability</span>
+              <i class="fas fa-arrow-circle-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="customer top" id="testimonials">
+    <div class="container">
+      <div class="heading">
+        <h5>TESTIMONIALS </h5>
+        <h3>What customers say </h3>
+      </div>
+
+      <div class="owl-carousel owl-theme mtop">
+        <div class="item">
+          <div class="rate">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h3>Excellent Swimming</h3>
+          <p>Nice place to stay. Good service. Clean and well maintained property.food quality and quantity is good. Just near the sea beach. Well connected. Swimming pool is very clean and well maintained.service is good.</p>
+          <div class="admin flex">
+            <div class="img">
+              <img src="image/virat.jpg" alt="">
+            </div>
+            <div class="text">
+              <h3>Virat Kohli</h3>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="rate">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h3>Clean Rooms</h3>
+          <p>Great location, really pleasant and clean rooms, but the thing that makes this such a good place to stay are the staff. All of the people are incredibly helpful and generous with their time and advice. We travelled with two six year olds and lots of luggage and despite the stairs up to the elevator this was one of the nicest places we stayed.</p>
+          <div class="admin flex">
+            <div class="img">
+              <img src="image/Nora fatehi.jpg" alt="">
+            </div>
+            <div class="text">
+              <h3>Nora Fatehi</h3>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="rate">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h3>Great Location</h3>
+          <p>Excellent property and very convenient to business activities. Staff members were extremely efficient, pleasant and helpful. High quality rooms, and high quality service. Thank you so much</p>
+            <div class="admin flex">
+            <div class="img">
+              <img src="image/King.jpg" alt="">
+            </div>
+            <div class="text">
+              <h3>ifeelking</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </section>
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: false,
+      dots: false,
+      navText: ["<i class='far fa-long-arrow-alt-left'></i>", "<i class='far fa-long-arrow-alt-right'></i>"],
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 1
+        },
+        1000: {
+          items: 1
+        }
+      }
+    })
+  </script>
+
+
+  <section class="gallary top" id="gallary">
+    <div class="owl-carousel owl-theme">
+      <div class="item">
+        <img src="image/g1.jpg" alt="">
+        <div class="overlay">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+      <div class="item">
+        <img src="image/g2.jpg" alt="">
+        <div class="overlay">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+      <div class="item">
+        <img src="image/g3.jpg" alt="">
+        <div class="overlay">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+      <div class="item">
+        <img src="image/g4.jpg" alt="">
+        <div class="overlay">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+      <div class="item">
+        <img src="image/g5.jpg" alt="">
+        <div class="overlay">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+      <div class="item">
+        <img src="image/g1.jpg" alt="">
+        <div class="overlay">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+      <div class="item">
+        <img src="image/g2.jpg" alt="">
+        <div class="overlay">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+      <div class="item">
+        <img src="image/g3.jpg" alt="">
+        <div class="overlay">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 0,
+      nav: false,
+      dots: false,
+      autoplay: true,
+      slideTransition: 'linear',
+      autoplayTimeout: 4000,
+      autoplaySpeed: 4000,
+      autoplayHoverPause: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 3
+        },
+        1000: {
+          items: 5
+        }
+      }
+    })
+  </script>
+
+
+  <section class="blog top" id="blog">
+    <div class="container">
+      <div class="heading">
+        <h5>OUR BLOG</h5>
+        <h3>News & articles updates</h3>
+      </div>
+
+      <div class="content grid mtop">
+        <div class="box">
+          <div class="img">
+            <img src="image/b1.jpg" alt="">
+            <span>HOTEL</span>
+          </div>
+          <div class="text">
+            <div class="flex">
+              <i class="far fa-user"> <label>Admin</label> </i>
+              <i class="far fa-comments"> <label>Comment</label> </i>
+            </div>
+            <h3>Celebrating Decade Years Of Hotel In 2023</h3>
+            <p> providing best stays to customer from past years.....</p>
+            <a href="#">Read More <i class='far fa-long-arrow-alt-right'></i> </a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="image/b2.jpg" alt="">
+            <span>HOTEL</span>
+          </div>
+          <div class="text">
+            <div class="flex">
+              <i class="far fa-user"> <label>Admin</label> </i>
+              <i class="far fa-comments"> <label>Comment</label> </i>
+            </div>
+            <h3>Engage Your Guests</h3>
+            <p> Trip Travel offers a fully automated and mobile guest journey to its guests</p>
+            <a href="#">Read More <i class='far fa-long-arrow-alt-right'></i> </a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="image/img.jpg" alt="">
+            <span>HOTEL</span>
+          </div>
+          <div class="text">
+            <div class="flex">
+              <i class="far fa-user"> <label>Admin</label> </i>
+              <i class="far fa-comments"> <label>Comment</label> </i>
+            </div>
+            <h3>Top Hospitality & Hotel Trends in 2021</h3>
+            <p> Fundamentally it has been a completely different year from any other – many referring to a “new normal” – bringing a plethora of contrasts to the industry when comparing hospitality to pre-covid times.....</p>
+            <a href="#">Read More <i class='far fa-long-arrow-alt-right'></i> </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="map top">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.400522082717!2d73.22789721510372!3d22.300687348515982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fc57f79e4c997%3A0x21b95714e0a2612b!2sUma%20Char%20Rasta%2C%20Vadodara%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1676835093374!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  </section>
+
+
+  <footer>
+    <div class="container top">
+      <div class="subscribe" id="contact">
+        <h2>Subscribe newsletter</h2>
+        <p> Subscribe to our website to get daily updates about tours and offers.</p>
+        <div class="input flex">
+          <input type="email" placeholder="Your Email address">
+          <button class="flex1">
+            <span>Subscribe</span>
+            <i class="fas fa-arrow-circle-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="content grid  top">
+        <div class="box">
+          <div class="logo">
+            <!--<img src="image/logo1.png" alt="">-->
+            <h1>TRIP TRAVEL</h1>
+          </div>
+          <p>Book your hotels from our websites to save your money and time and get best deals , facilites and offers on your bookings. </p>
+          <div class="social flex">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-youtube"></i>
+          </div>
+        </div>
+
+        <div class="box">
+          <h2>Quick Links</h2>
+          <ul>
+            <li><i class="fas fa-angle-double-right"></i>Login/Sigin</li>
+            <li><i class="fas fa-angle-double-right"></i>Wellness</li>
+            <li><i class="fas fa-angle-double-right"></i>Spa Gallery</li>
+            <li><i class="fas fa-angle-double-right"></i>Booking</li>
+          </ul>
+        </div>
+
+        <div class="box">
+          <h2>Services</h2>
+          <ul>
+            <li><i class="fas fa-angle-double-right"></i>Restaurant</li>
+            <li><i class="fas fa-angle-double-right"></i>Swimming Pool</li>
+            <li><i class="fas fa-angle-double-right"></i>Wellness & Spa</li>
+            <li><i class="fas fa-angle-double-right"></i>Conference Room</li>
+            <li><i class="fas fa-angle-double-right"></i>Events</li>
+            <li><i class="fas fa-angle-double-right"></i>Variety of Rooms</li>
+          </ul>
+        </div>
+
+        <div class="box">
+          <h2>Services</h2>
+          <div class="icon flex">
+            <div class="i">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="text">
+              <h3>Address</h3>
+              <p>Uma Char Rasta , Vadodara Gujarat</p>
+            </div>
+          </div>
+          <div class="icon flex">
+            <div class="i">
+              <i class="fas fa-phone"></i>
+            </div>
+            <div class="text">
+              <h3>Phone</h3>
+              <p>+91 6264547523</p>
+            </div>
+          </div>
+          <div class="icon flex">
+            <div class="i">
+              <i class="far fa-envelope"></i>
+            </div>
+            <div class="text">
+              <h3>Email</h3>
+              <p>hellotraveller@ecorik.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+
+</html>
